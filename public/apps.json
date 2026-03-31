@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "Skyward Navigator",
+    "companyName": "AeroSoft Systems",
+    "id": 101,
+    "description": "A precision navigation tool for drone pilots and hobbyist aviators, featuring real-time weather overlays and no-fly zone alerts.",
+    "size": 45,
+    "reviews": 1240,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 240 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "ZenFocus",
+    "companyName": "Mindful Labs",
+    "id": 102,
+    "description": "Improve your productivity with ambient soundscapes and a built-in Pomodoro timer designed for deep work sessions.",
+    "size": 22,
+    "reviews": 3100,
+    "ratingAvg": 4.8,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2140 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "FitTrack Pro",
+    "companyName": "Velocity Health",
+    "id": 103,
+    "description": "Comprehensive fitness tracking with AI-driven workout plans and meal logging to help you reach your goals faster.",
+    "size": 58,
+    "reviews": 850,
+    "ratingAvg": 4.2,
+    "downloads": 25000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 350 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "CryptoWatch",
+    "companyName": "BlockSync Inc",
+    "id": 104,
+    "description": "Real-time cryptocurrency price alerts and portfolio management with bank-grade encryption security.",
+    "size": 33,
+    "reviews": 5200,
+    "ratingAvg": 3.9,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2200 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "PixelEditor",
+    "companyName": "Creative Suite",
+    "id": 105,
+    "description": "A powerful photo editing app with layer support, custom brushes, and one-tap AI enhancements for social media.",
+    "size": 112,
+    "reviews": 15600,
+    "ratingAvg": 4.7,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "GreenThumb",
+    "companyName": "EcoGarden",
+    "id": 106,
+    "description": "Identify plants instantly using your camera and get specialized care reminders for your indoor jungle.",
+    "size": 39,
+    "reviews": 430,
+    "ratingAvg": 4.4,
+    "downloads": 15000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 200 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "LingoLeap",
+    "companyName": "Global Dialect",
+    "id": 107,
+    "description": "Master a new language through gamified lessons and real-time conversations with native speakers.",
+    "size": 74,
+    "reviews": 9800,
+    "ratingAvg": 4.6,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "RecipeBox",
+    "companyName": "Culinaria",
+    "id": 108,
+    "description": "Store all your recipes in one place and generate shopping lists automatically based on your weekly meal plan.",
+    "size": 28,
+    "reviews": 1200,
+    "ratingAvg": 4.3,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "BudgetBuddy",
+    "companyName": "Fiscal Flow",
+    "id": 109,
+    "description": "Take control of your finances with easy expense tracking and visual reports of your spending habits.",
+    "size": 19,
+    "reviews": 2700,
+    "ratingAvg": 4.1,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "StarGazer",
+    "companyName": "Cosmic View",
+    "id": 110,
+    "description": "Point your phone at the sky to identify planets, constellations, and satellites in augmented reality.",
+    "size": 130,
+    "reviews": 6500,
+    "ratingAvg": 4.9,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "NoteWorthy",
+    "companyName": "Scribe Labs",
+    "id": 111,
+    "description": "A minimalist markdown note-taking app that syncs seamlessly across all your devices.",
+    "size": 12,
+    "reviews": 1100,
+    "ratingAvg": 4.5,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "RouteMaster",
+    "companyName": "Transit Tech",
+    "id": 112,
+    "description": "The ultimate public transport companion with live updates for buses, trains, and subways worldwide.",
+    "size": 42,
+    "reviews": 18000,
+    "ratingAvg": 3.7,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "DreamJournal",
+    "companyName": "RemPhase",
+    "id": 113,
+    "description": "Record and analyze your dreams to discover patterns and improve your sleep quality.",
+    "size": 25,
+    "reviews": 900,
+    "ratingAvg": 4.4,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "CodeRun",
+    "companyName": "DevTools Co",
+    "id": 114,
+    "description": "A mobile IDE that supports 20+ programming languages with syntax highlighting and Git integration.",
+    "size": 88,
+    "reviews": 3200,
+    "ratingAvg": 4.6,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "WeatherWise",
+    "companyName": "MeteorLogic",
+    "id": 115,
+    "description": "Hyper-local weather forecasts with interactive radar and severe storm notifications.",
+    "size": 31,
+    "reviews": 25000,
+    "ratingAvg": 4.8,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 15000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "VibeStream",
+    "companyName": "Sonic Wave",
+    "id": 116,
+    "description": "High-fidelity music streaming focusing on independent artists and curated underground playlists.",
+    "size": 62,
+    "reviews": 4100,
+    "ratingAvg": 4.2,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "PetPals",
+    "companyName": "AnimCare",
+    "id": 117,
+    "description": "Connect with local pet sitters and walkers. Includes a GPS tracker for your dog's daily walks.",
+    "size": 47,
+    "reviews": 1500,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 900 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "SafeVault",
+    "companyName": "Cipher Guard",
+    "id": 118,
+    "description": "Securely store your passwords, credit card info, and private documents with biometric unlocking.",
+    "size": 15,
+    "reviews": 7800,
+    "ratingAvg": 4.7,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "BookWorm",
+    "companyName": "Literary Hub",
+    "id": 119,
+    "description": "Keep track of your personal library, set reading goals, and join virtual book clubs.",
+    "size": 36,
+    "reviews": 2100,
+    "ratingAvg": 4.4,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1000 }
+    ]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/refs/heads/main/assets/demo-app%20(1).webp",
+    "title": "TaskMaster",
+    "companyName": "Efficiency Experts",
+    "id": 120,
+    "description": "A collaborative task management tool for teams with Kanban boards and time-tracking features.",
+    "size": 52,
+    "reviews": 3400,
+    "ratingAvg": 4.0,
+    "downloads": 110000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1000 }
+    ]
+  }
+]
