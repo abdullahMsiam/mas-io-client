@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaAppStoreIos } from "react-icons/fa";
+import bannerImg from '/src/assets/hero (1).png';
 const Banner = () => {
     return (
         <div className='container bg-base-200 mx-auto px-4 py-2'>
@@ -25,7 +26,7 @@ const Banner = () => {
                     </div>
 
                     <div className='mt-10 '>
-                        <img className='image-full' src="/src/assets/hero (1).png" alt="" />
+                        <img className='image-full' src={bannerImg} alt="" />
                     </div>
 
                     <div className='bg-linear-to-r from-blue-600 to-blue-900 p-10 w-full text-white'>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 import { FaGithubAlt } from "react-icons/fa";
+import logo from '../../assets/logo.png'; 
 
 const Navbar = () => {
     const navItems = (
@@ -28,7 +29,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <NavLink to={"/"} className="btn btn-ghost text-xl">
-                        <img className='w-8' src="/src/assets/logo.png" alt="" />
+                        <img className='w-8' src={logo} alt="" />
                         <span className='font-bold text-blue-900'>MAS.IO</span>
                     </NavLink>
                 </div>
