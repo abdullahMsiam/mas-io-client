@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import Banner from './Banner';
 import TrendingApps from './TrendingApps';
 import { useLoaderData } from 'react-router';
