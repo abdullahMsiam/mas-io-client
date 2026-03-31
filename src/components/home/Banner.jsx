@@ -27,6 +27,27 @@ const Banner = () => {
                     <div className='mt-10 '>
                         <img className='image-full' src="/src/assets/hero (1).png" alt="" />
                     </div>
+
+                    <div className='bg-linear-to-r from-blue-600 to-blue-900 p-10 w-full text-white'>
+                        <h1 className='text-4xl text-center font-bold'>Trusted by Millions, Built for You</h1>
+                        <div className='flex items-center justify-around gap-10 mt-6 '>
+                            <div>
+                                <p className='text-gray-200'>Total Download</p>
+                                <p className='text-5xl font-bold'>30.1M</p>
+                                <p className='text-gray-600'>15% Increase</p>
+                            </div>
+                            <div>
+                                <p className='text-gray-200'>Total Review</p>
+                                <p className='text-5xl font-bold'>4.8M</p>
+                                <p className='text-gray-600'>10% Increase</p>
+                            </div>
+                            <div>
+                                <p className='text-gray-200'>Active Apps</p>
+                                <p className='text-5xl font-bold '>120</p>
+                                <p className='text-gray-600'>20% Increase</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
