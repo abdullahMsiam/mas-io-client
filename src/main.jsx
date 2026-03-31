@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch('/public/apps.json').then(res => res.json()),
+        loader: () => fetch('/apps.json').then(res => res.json()),
         element: <Home/>
       }
     ]
