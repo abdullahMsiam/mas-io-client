@@ -7,9 +7,9 @@ const Navbar = () => {
     const navItems = (
         <div className='flex flex-col font-bold lg:flex-row gap-4'>
         
-        <NavLink className='hover:underline'>Home</NavLink>
-        <NavLink className='hover:underline'>Apps</NavLink>
-        <NavLink className='hover:underline'>Installation</NavLink>
+        <NavLink to={'/'} className={`hover:underline ${ location.pathname == '/' ? 'text-blue-900 underline' : ''}`}>Home</NavLink>
+        <NavLink to={'/all-apps'} className={`hover:underline ${ location.pathname == '/all-apps' ? 'text-blue-900 underline' : '' }`}>Apps</NavLink>
+        <NavLink to={'/installation'} className={`hover:underline ${ location.pathname == '/installation' ? 'text-blue-900 underline' : '' }`}>Installation</NavLink>
         </div>
         
     )
