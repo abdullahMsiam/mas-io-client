@@ -2,8 +2,27 @@ import React from 'react';
 import { FaComment, FaDownload, FaStar } from 'react-icons/fa';
 import { useLoaderData } from 'react-router';
 import { formatNumber } from '../utility/formateNums';
+import { BarChart, Bar } from 'recharts';
+import RatingChart from '../utility/RatingChart';
 
 const AppDetails = () => {
+   
+    /*  {
+            name: 'Page A',
+            uv: 4000,
+            pv: 2400,
+            amt: 2400,
+        },
+        
+        "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 240 },
+      { "name": "5 star", "count": 750 }
+    ]*/
+
+    // #endregion
     const app = useLoaderData();
     console.log(app);
 
@@ -39,7 +58,7 @@ const AppDetails = () => {
                             <p className='text-3xl text-green-500'> <FaComment /> </p>
                             <p>Reviews</p>
                             <p className='text-4xl font-bold'>{formatNumber(totalReviews)}</p>
-                        </div> 
+                        </div>
                     </div>
                     <button className='btn btn-success py-3'>
                         <FaDownload />
@@ -49,6 +68,10 @@ const AppDetails = () => {
             </div>
 
             <hr className='border-zinc-500 border mt-6' />
+
+            <div>
+                <RatingChart/>
+            </div>
         </div>
     );
 };
