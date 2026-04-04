@@ -8,7 +8,7 @@ import RatingChart from '../utility/RatingChart';
 const AppDetails = () => {
 
     const app = useLoaderData();
-    console.log(app);
+
 
 
     const totalReviews = app.ratings.reduce((acc, curr) => acc + curr.count, 0);
@@ -20,7 +20,7 @@ const AppDetails = () => {
     const averageRating = totalReviews > 0 ? (totalWeight / totalReviews).toFixed(1) : 0;
 
     return (
-        <div className='max-w-7xl mx-auto p-2'>
+        <div className='max-w-7xl mx-auto p-2 mb-10'>
             <div className='mt-10 flex flex-col md:flex-row justify-between items-center gap-10'>
                 <img className='w-fit' src={app.image} alt={app.title} />
                 <div className='flex-1 space-y-4'>

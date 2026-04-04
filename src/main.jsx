@@ -21,6 +21,7 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
+        index: false,
         path: "all-apps",
         loader: () => fetch('/apps.json').then(res => res.json()),
         element: <AllApps />
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
         element: <AppDetails />
       }, 
       {
+        index: false,
         path: "*",
         element: <NotFoundPage/>
       }
