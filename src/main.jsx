@@ -8,6 +8,7 @@ import { RouterProvider } from "react-router/dom";
 import Home from './components/home/Home.jsx';
 import AllApps from './components/allApps/AllApps.jsx';
 import AppDetails from './components/app-details/AppDetails.jsx';
+import NotFoundPage from './components/utility/NotFoundPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
           return app;
         }),
         element: <AppDetails />
+      }, 
+      {
+        path: "*",
+        element: <NotFoundPage/>
       }
     ]
   },
