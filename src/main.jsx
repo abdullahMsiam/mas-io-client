@@ -35,13 +35,13 @@ const router = createBrowserRouter([
         }),
         element: <AppDetails />
       }, 
-      {
-        index: false,
-        path: "*",
-        element: <NotFoundPage/>
-      }
     ]
   },
+  {
+        path: "*",
+        Component: NotFoundPage
+      
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
