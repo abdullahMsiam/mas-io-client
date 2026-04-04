@@ -18,11 +18,6 @@ const ratings = [
 
 
 
-// #region Sample data
-// const data = [];
-
-// #endregion
-
 const RatingChart = () => {
     return (
         <div className="w-full h-64">

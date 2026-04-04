@@ -6,23 +6,7 @@ import { BarChart, Bar } from 'recharts';
 import RatingChart from '../utility/RatingChart';
 
 const AppDetails = () => {
-   
-    /*  {
-            name: 'Page A',
-            uv: 4000,
-            pv: 2400,
-            amt: 2400,
-        },
-        
-        "ratings": [
-      { "name": "1 star", "count": 50 },
-      { "name": "2 star", "count": 80 },
-      { "name": "3 star", "count": 120 },
-      { "name": "4 star", "count": 240 },
-      { "name": "5 star", "count": 750 }
-    ]*/
 
-    // #endregion
     const app = useLoaderData();
     console.log(app);
 
@@ -70,7 +54,12 @@ const AppDetails = () => {
             <hr className='border-zinc-500 border mt-6' />
 
             <div>
+                <h2 className='text-2xl font-semibold mt-5 ms-4'>Ratings</h2>
                 <RatingChart/>
+            </div>
+            <div>
+                <h2 className='text-2xl font-semibold mt-5'>Description</h2>
+                <p className='text-gray-700 mt-2'>{app.description}</p>
             </div>
         </div>
     );
