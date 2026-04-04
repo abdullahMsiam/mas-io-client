@@ -1,17 +1,36 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 import { FaGithubAlt } from "react-icons/fa";
-import logo from '../../assets/logo.png'; 
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
     const navItems = (
         <div className='flex flex-col font-bold lg:flex-row gap-4'>
-        
-        <NavLink to={'/'} className={`hover:underline ${ location.pathname == '/' ? 'text-blue-900 underline' : ''}`}>Home</NavLink>
-        <NavLink to={'/all-apps'} className={`hover:underline ${ location.pathname == '/all-apps' ? 'text-blue-900 underline' : '' }`}>Apps</NavLink>
-        <NavLink to={'/installation'} className={`hover:underline ${ location.pathname == '/installation' ? 'text-blue-900 underline' : '' }`}>Installation</NavLink>
+
+            <NavLink to={'/'} className={({ isActive }) =>
+                `${isActive
+                    ? "text-blue-600 underline"
+                    : ""
+                }`
+            }>Home</NavLink>
+            <NavLink to={'/all-apps'}
+                className={({ isActive }) =>
+                    `${isActive
+                        ? "text-blue-600 underline"
+                        : ""
+                    }`
+                }
+            >Apps</NavLink>
+            <NavLink to={'/installation'}
+                className={({ isActive }) =>
+                    `${isActive
+                        ? "text-blue-600 underline"
+                        : ""
+                    }`
+                }
+            >Installation</NavLink>
         </div>
-        
+
     )
     return (
         <div>
@@ -35,7 +54,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                      {/*  */}
+                        {/*  */}
                         {navItems}
                     </ul>
                 </div>

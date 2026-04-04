@@ -1,5 +1,7 @@
 import React, { use, useEffect, useState } from 'react';
 import AppCard from '../utility/AppCard';
+import Loading from '../utility/Loading';
+import AppNotFound from '../utility/AppNotFound';
 const fetchApps = async () => {
     const response = await fetch('/apps.json');
     const data = await response.json();
@@ -9,10 +11,17 @@ const appPromise = fetchApps();
 
 const AllApps = () => {
     const [apps, setApps] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const appPromiseData = use(appPromise);
     useEffect(() => {
-        setApps(appPromiseData);
+        const callFetchApps = async () => {
+            setApps(appPromiseData);
+            setLoading(false);
+        }
+
+        callFetchApps();
+
     }, [appPromiseData]);
 
     console.log(apps);
@@ -24,6 +33,7 @@ const AllApps = () => {
     };
 
     return (
+        loading ? <div> <Loading /> </div> : 
         <div className='max-w-5xl mx-auto my-10 p-2'>
             <h1 className='text-4xl font-bold text-center'>Our All Application</h1>
             <p className='text-center text-gray-600'>Explore All Apps on the Market developed by us</p>
@@ -49,8 +59,10 @@ const AllApps = () => {
                 </div>
                 <div>
                     {
-                        apps.length == 0 ? 
-                        <div className='text-red-800 text-4xl font-bold'>No apps found</div> :
+                        apps.length == 0 ?
+                            <div>
+                                <AppNotFound/>
+                            </div> :
                             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-10 justify-items-center mx-1'>
                                 {
                                     apps.map(app => (
