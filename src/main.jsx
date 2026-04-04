@@ -7,6 +7,7 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Home from './components/home/Home.jsx';
 import AllApps from './components/allApps/AllApps.jsx';
+import AppDetails from './components/app-details/AppDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,15 @@ const router = createBrowserRouter([
         path: "all-apps",
         loader: () => fetch('/apps.json').then(res => res.json()),
         element: <AllApps />
+      }, 
+      {
+        path: "app-details/:id",
+        loader: ({ params }) => fetch('/apps.json').then(res => res.json()).then(apps =>{
+          
+          const app = apps.find(app => app.id == params.id);
+          return app;
+        }),
+        element: <AppDetails />
       }
     ]
   },

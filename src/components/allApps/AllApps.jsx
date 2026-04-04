@@ -49,7 +49,8 @@ const AllApps = () => {
                 </div>
                 <div>
                     {
-                        apps.length == 0 ? <div className='text-red-800 text-4xl font-bold'>No apps found</div> :
+                        apps.length == 0 ? 
+                        <div className='text-red-800 text-4xl font-bold'>No apps found</div> :
                             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-10 justify-items-center mx-1'>
                                 {
                                     apps.map(app => (
