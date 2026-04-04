@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getStoredAppId, removeFromStoredAppId } from '../utility/storeManage';
 import { FaDownload, FaSort, FaStar } from 'react-icons/fa';
 import { formatNumber } from '../utility/formateNums';
+import AppNotFound from '../utility/AppNotFound';
 
 const appsPromise = fetch('/apps.json').then(res => res.json());
 
@@ -37,25 +38,31 @@ const Installation = () => {
                     <button onClick={handleShortBySize} className='flex items-center gap-2 justify-around btn btn-outline rounded-none'>Short By Size <FaSort /></button>
                 </div>
 
-                <div className='flex flex-col gap-1 mt-5 max-w-5xl mx-auto'>
-                    {
-                        apps.map(app => (
-                            <div key={app.id} className='flex items-center gap-4 p-1 border bg-base-300'>
-                                <img className='w-10' src={app.image} alt={app.title} />
-                                <div className=''>
-                                    <h3 className='font-bold'>{app?.title}</h3>
-                                    <div className='flex justify-between items-center w-36 text-sm'>
-                                        <p className='flex items-center gap-0.5 text-blue-600 font-semibold'>{formatNumber(app?.downloads)} <FaDownload /></p>
-                                        <p className='flex items-center gap-0.5 text-yellow-600 font-semibold'>{app?.ratingAvg} <FaStar /></p>
-                                        <p className='text-gray-600 font-semibold'>{app?.size} MB</p>
-                                    </div>
-                                </div>
-                                <button onClick={() => removeFromStoredAppId(app?.id)} className='btn btn-sm border-none btn-error text-white ml-auto'>Uninstall</button>
-                            </div>
-                        ))
+                {
+                    apps.length === 0 ? <AppNotFound/> :
 
-                    }
-                </div>
+                        <div className='flex flex-col gap-1 mt-5 max-w-5xl mx-auto'>
+                            {
+                                apps.map(app => (
+                                    <div key={app.id} className='flex items-center gap-4 p-1 border bg-base-300'>
+                                        <img className='w-10' src={app.image} alt={app.title} />
+                                        <div className=''>
+                                            <h3 className='font-bold'>{app?.title}</h3>
+                                            <div className='flex justify-between items-center w-36 text-sm'>
+                                                <p className='flex items-center gap-0.5 text-blue-600 font-semibold'>{formatNumber(app?.downloads)} <FaDownload /></p>
+                                                <p className='flex items-center gap-0.5 text-yellow-600 font-semibold'>{app?.ratingAvg} <FaStar /></p>
+                                                <p className='text-gray-600 font-semibold'>{app?.size} MB</p>
+                                            </div>
+                                        </div>
+                                        <button onClick={() => removeFromStoredAppId(app?.id)} className='btn btn-sm border-none btn-error text-white ml-auto'>Uninstall</button>
+                                    </div>
+                                ))
+
+                            }
+                        </div>
+                }
+
+
             </section>
         </div>
     );

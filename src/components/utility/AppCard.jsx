@@ -15,7 +15,7 @@ const AppCard = ({ app }) => {
     return (
         <Link to={`/app-details/${app?.id}`} className='bg-white rounded-sm shadow-md p-2 max-w-sm'>
             <img className='w-fit rounded-xl' src={app.image} alt={app.name} />
-            <h3>{app.title}</h3>
+            <h3 className="text-black">{app.title}</h3>
             <div className='flex justify-between items-center mt-2'>
                 <p className='btn btn-sm flex justify-center items-center gap-1 text-green-900 bg-green-800/30 px-1 rounded-sm font-semibold '><FaDownload /> {app?.downloads}</p>
                 <p className='btn btn-sm flex justify-center items-center gap-1 text-yellow-700 bg-yellow-500/30 px-1 rounded-sm font-semibold'><FaStar /> {averageRating}</p>

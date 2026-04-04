@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { FaGithubAlt } from "react-icons/fa";
 import logo from '../../assets/logo.png';
 
@@ -59,7 +59,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-blue-900 text-white flex justify-between"> <FaGithubAlt /> Contribute</a>
+                    <Link to='https://github.com/abdullahMsiam' target='_blank' className="btn bg-blue-600 text-white flex justify-between"> <FaGithubAlt /> Contribute</Link>
                 </div>
             </div>
         </div>
