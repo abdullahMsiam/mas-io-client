@@ -24,7 +24,7 @@ const AllApps = () => {
 
     }, [appPromiseData]);
 
-    console.log(apps);
+    // console.log(apps);
 
     const handleSearch = (event) => {
         const searchTerm = event.target.value.toLowerCase();

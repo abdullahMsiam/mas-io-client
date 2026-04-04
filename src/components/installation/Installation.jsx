@@ -15,7 +15,7 @@ const Installation = () => {
 
     }, []);
 
-    console.log(apps);
+    // console.log(apps);
 
     const appIds = getStoredAppId();
 

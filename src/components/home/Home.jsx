@@ -9,7 +9,7 @@ import { useLoaderData } from 'react-router';
 
 const Home = () => {
     const apps = useLoaderData(); 
-    console.log(apps);
+    // console.log(apps);
    
     return (
         <div>

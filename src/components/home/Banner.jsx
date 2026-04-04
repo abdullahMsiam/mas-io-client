@@ -2,6 +2,7 @@ import React from 'react';
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaAppStoreIos } from "react-icons/fa";
 import bannerImg from '/src/assets/hero (1).png';
+import { Link } from 'react-router';
 const Banner = () => {
     return (
         <div className='container bg-base-200 mx-auto px-4 py-2'>
@@ -15,14 +16,14 @@ const Banner = () => {
                         We create innovative solutions that drive business growth and user satisfaction. Our team of experts is dedicated to delivering <br/> high-quality products that meet your unique needs and exceed your expectations.
                     </p>
                     <div className='flex gap-4 mt-6'>
-                        <button className='btn btn-primary py-3'>
+                        <Link to='https://play.google.com/' target='_blank' className='btn btn-primary py-3'>
                             <IoLogoGooglePlaystore />
                             <span className='ml-2'>Google Play</span>
-                        </button>
-                        <button className='btn btn-secondary py-3'>
+                        </Link>
+                        <Link to='https://www.apple.com/app-store/' target='_blank' className='btn btn-secondary py-3'>
                             <FaAppStoreIos />
                             <span className='ml-2'>App Store</span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div className='mt-10 '>
