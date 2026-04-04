@@ -4,12 +4,11 @@ import { useLoaderData } from 'react-router';
 import { formatNumber } from '../utility/formateNums';
 import { BarChart, Bar } from 'recharts';
 import RatingChart from '../utility/RatingChart';
+import { addToStoredAppId, } from '../utility/storeManage';
 
 const AppDetails = () => {
 
     const app = useLoaderData();
-
-
 
     const totalReviews = app.ratings.reduce((acc, curr) => acc + curr.count, 0);
 
@@ -44,7 +43,10 @@ const AppDetails = () => {
                             <p className='text-4xl font-bold'>{formatNumber(totalReviews)}</p>
                         </div>
                     </div>
-                    <button className='btn btn-success py-3'>
+                    <button onClick={() => {
+                        addToStoredAppId(app?.id);
+                        
+                    }} className='btn btn-success py-3'>
                         <FaDownload />
                         <span className='ml-2'> Install Now ({app?.size})MB </span>
                     </button>

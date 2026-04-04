@@ -9,6 +9,7 @@ import Home from './components/home/Home.jsx';
 import AllApps from './components/allApps/AllApps.jsx';
 import AppDetails from './components/app-details/AppDetails.jsx';
 import NotFoundPage from './components/utility/NotFoundPage.jsx';
+import Installation from './components/installation/Installation.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,13 +36,18 @@ const router = createBrowserRouter([
         }),
         element: <AppDetails />
       }, 
-    ]
-  },
-  {
+      {
+        index: false,
+        path: "installation",
+        element: <Installation />
+      },
+      {
+        index: false,
         path: "*",
         Component: NotFoundPage
-      
-  }
+      }
+    ]
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(
